@@ -3,7 +3,11 @@ nums=[3, 5, -1, 4, 6, 0, 2]
 res=[]
 max_ele=0
 for i in range(len(nums)):
-    max_ele=max(max_ele,nums[i])
-    
-    res.append(max_ele)
+    if nums[i]<=0:
+        max_ele=0
+        res.append(max_ele)
+    else:
+        max_ele=max(max_ele,nums[i])
+        
+        res.append(max_ele)
 print(res)
