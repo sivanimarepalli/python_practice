@@ -1,0 +1,9 @@
+# Create a module calculator.py with functions add(), subtract(), multiply(), and divide().
+# Import it in another script and use all functions.
+import calculator
+a=int(input("Enter a number: "))
+b=int(input("Enter another number: "))
+print(calculator.add(a,b))
+print(calculator.subtract(a,b))
+print(calculator.multiply(a,b))
+print(calculator.divide(a,b))
